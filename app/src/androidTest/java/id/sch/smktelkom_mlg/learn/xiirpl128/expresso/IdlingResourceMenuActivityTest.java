@@ -59,7 +59,7 @@ public class IdlingResourceMenuActivityTest {
      * The ActivityTestRule is a rule provided by Android used for functional testing of a single
      * activity. The activity that will be tested, MenuActivity in this case, will be launched
      * before each test that's annotated with @Test and before methods annotated with @Before.
-     * <p>
+     *
      * The activity will be terminated after the test and methods annotated with @After are
      * complete. This rule allows you to directly access the activity during the test.
      */
