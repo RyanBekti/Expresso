@@ -46,10 +46,12 @@ public class OrderSummaryActivityTest {
     private static final String emailMessage = "I just ordered a delicious tea from TeaTime. Next time you are craving a tea, check them out!";
 
     /**
+     *
      * This test demonstrates Espresso Intents using the IntentsTestRule, a class that extends
      * ActivityTestRule. IntentsTestRule initializes Espresso-Intents before each test that is annotated
      * with @Test and releases it once the test is complete. The designated Activity
      * is also terminated after each test.
+     *
      */
 
     @Rule
@@ -63,7 +65,6 @@ public class OrderSummaryActivityTest {
         // every test run. In this case all external Intents will be blocked.
         intending(not(isInternal())).respondWith(new ActivityResult(Activity.RESULT_OK, null));
     }
-
 
     @Test
     public void clickSendEmailButton_SendsEmail() {
